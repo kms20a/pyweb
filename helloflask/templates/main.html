@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %} {{title}} {% endblock %}
+
+{% block section %}
+<div>
+    {{ super() }}
+    aaaaaaaaaaaaaaaaaa
+</div>
+{% endblock %}
+
+{% block outer_block %}
+    <p>11111111111</p>
+    {{ super() }}
+    {% block inner_block %} BBBBBB {% endblock inner_block %}
+{% endblock outer_block %}
